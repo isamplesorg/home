@@ -1,3 +1,3 @@
 # iSamples Project
 
-Placehlde for isamples site.
+Placeholder for isamples site.
