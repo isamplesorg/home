@@ -1,4 +1,3 @@
-# iSamples Project
 # iSamples: Internet of Samples
 ## *Toward an Interdisciplinary Cyberinfrastructure for Material Samples*
 
