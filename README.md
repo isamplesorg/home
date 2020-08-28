@@ -11,7 +11,8 @@ The iSamples project is a multi-disciplinary collaboration that will develop a n
 
 Leveraging significant national investments, iSamples provides the missing link among
 1. physical collections (e.g., natural history museums, herbaria, biobanks),
-2. field stations, marine laboratories, long-term ecological research sites, and observatories, and 3. data repositories and cyberinfrastructure. iSamples delivers enhanced infrastructure for STEM research and education, decision-makers, and the general public.
+2. field stations, marine laboratories, long-term ecological research sites, and observatories, and 
+3. data repositories and cyberinfrastructure. iSamples delivers enhanced infrastructure for STEM research and education, decision-makers, and the general public.
 
 iSamples benefits national security and resource management by offering a means to assure sample provenance, improving scientific reproducibility and demonstrating compliance with ethical standards, national regulations, and international treaties, (e.g., automated audits of sensitive archaeological specimens, endangered species, or specimens containing controlled substances).
 
