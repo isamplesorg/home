@@ -1,4 +1,4 @@
-# iSamples: Internet of Samples
+# Internet of Samples: iSamples
 ## *Toward an Interdisciplinary Cyberinfrastructure for Material Samples*
 
 The Internet of Samples (iSamples) is a multi-disciplinary and multi-institutional project to design, develop, and promote service infrastructure to uniquely, consistently, and conveniently identify material samples, record metadata about them, and persistently link them to other samples and derived digital content, including images, data, and publications.
