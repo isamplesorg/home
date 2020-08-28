@@ -4,8 +4,8 @@
 The Internet of Samples (iSamples) is a multi-disciplinary and multi-institutional project to design, develop, and promote service infrastructure to uniquely, consistently, and conveniently identify material samples, record metadata about them, and persistently link them to other samples and derived digital content, including images, data, and publications.
 
 **Resources**
-* [iSamples Zenodo Community](https://zenodo.org/communities/isamples)
-* [iSamples Twitter](https://twitter.com/isamplesorg)
+* [Zenodo Community](https://zenodo.org/communities/isamples)
+* [Follow us on Twitter](https://twitter.com/isamplesorg)
 
 ## Project Objectives
 1. Design and develop iSamples infrastructure (iSamples in a Box and iSamples Central);
