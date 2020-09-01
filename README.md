@@ -1,7 +1,7 @@
-# Internet of Samples: iSamples
-## *Toward an Interdisciplinary Cyberinfrastructure for Material Samples*
+# Internet of Samples: iSamples 
+## *Toward an Interdisciplinary Cyberinfrastructure for Material Samples* [![NSF-1928366](https://img.shields.io/badge/NSF-2004815-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=2004815)
 
-The Internet of Samples (iSamples) is a multi-disciplinary and multi-institutional project to design, develop, and promote service infrastructure to uniquely, consistently, and conveniently identify material samples, record metadata about them, and persistently link them to other samples and derived digital content, including images, data, and publications.
+The Internet of Samples (iSamples) is a multi-disciplinary and multi-institutional project funded by the National Science Foundation to design, develop, and promote service infrastructure to uniquely, consistently, and conveniently identify material samples, record metadata about them, and persistently link them to other samples and derived digital content, including images, data, and publications.
 
 **Resources**
 * [Recording of project presentation at the 2020 SPNHC & ICOM NATHIST Conference](https://youtu.be/eRUw5NMksFo?t=105)
@@ -39,3 +39,8 @@ The iSamples project will:
 * Ramona Walls University of Arizona
 * Neil Davies The Regents of the University of California, Berkeley
 * David Vieglais University of Kansas Center for Research Inc.
+
+---
+<font size="10px">
+This material is based upon work supported by the National Science Foundation under [Grant Number 2004815](https://nsf.gov/awardsearch/showAward?AWD_ID=2004815). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
+  </font>
