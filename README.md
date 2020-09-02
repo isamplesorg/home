@@ -35,10 +35,10 @@ The iSamples project will:
 * Extend existing capabilities, enhance consistency, and expand their reach to serve science and society much more broadly through integration with established discipline-specific infrastructure at the System for Earth Sample Registration SESAR (geoscience), CyVerse (bioscience), Open Context (archaeology), and the Smithsonian Institution.
 
 ## Principal Investigators
-* Kerstin Lehnert Columbia University
-* Ramona Walls University of Arizona
-* Neil Davies The Regents of the University of California, Berkeley
-* David Vieglais University of Kansas Center for Research Inc.
+* Kerstin Lehnert, Columbia University
+* Ramona Walls, University of Arizona
+* Neil Davies, The Regents of the University of California, Berkeley
+* David Vieglais, University of Kansas Center for Research Inc.
 
 ---
 
