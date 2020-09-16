@@ -38,7 +38,7 @@ The iSamples project will:
 * Kerstin Lehnert, Columbia University
 * Ramona Walls, University of Arizona
 * Neil Davies, The Regents of the University of California, Berkeley
-* David Vieglais, University of Kansas Biodiversity Institute.
+* David Vieglais, University of Kansas Biodiversity Institute
 
 ---
 
