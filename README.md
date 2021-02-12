@@ -13,7 +13,7 @@ The Internet of Samples (iSamples) is a multi-disciplinary and multi-institution
 2. Build four initial implementations of iSamples for adoption and use case testing (Open Context, GEOME, SESAR, and Smithsonian Institution);
 3. Conduct outreach and community engagement to developers, individual researchers, and international organizations concerned with material samples.
 
-![iSamples diagram](iSamples architecture.jpg)
+![iSamples diagram](iSamples%20architecture.jpg)
 *Diagram from: Davies, N., Deck, J., Kansa, E., Kansa, S., Kunze, J., Meyer, C., Orrell, T., Ramdeen, S., Snyder, R., Vieglais, D., Walls, R.L., & Lehnert, K. (2021). Internet of Samples (iSamples): Toward an Interdisciplinary Cyberinfrastructure for Material Samples. Paper submitted for review.*
 
 ## Background
