@@ -4,9 +4,10 @@
 The Internet of Samples (iSamples) is a multi-disciplinary and multi-institutional project funded by the National Science Foundation to design, develop, and promote service infrastructure to uniquely, consistently, and conveniently identify material samples, record metadata about them, and persistently link them to other samples and derived digital content, including images, data, and publications.
 
 **Resources**
-* [Recording of project presentation at the 2020 SPNHC & ICOM NATHIST Conference](https://youtu.be/eRUw5NMksFo?t=105)
+* [Article -- Internet of Samples (iSamples): Toward an interdisciplinary cyberinfrastructure for material samples](https://doi.org/10.1093/gigascience/giab028)
 * [Zenodo Community](https://zenodo.org/communities/isamples)
 * [Follow us on Twitter](https://twitter.com/isamplesorg)
+* [Recording of project presentation at the 2020 SPNHC & ICOM NATHIST Conference](https://youtu.be/eRUw5NMksFo?t=105)
 
 ## Project Objectives
 1. Design and develop iSamples infrastructure (iSamples in a Box and iSamples Central);
@@ -14,7 +15,7 @@ The Internet of Samples (iSamples) is a multi-disciplinary and multi-institution
 3. Conduct outreach and community engagement to developers, individual researchers, and international organizations concerned with material samples.
 
 ![iSamples diagram](iSamples%20architecture.jpg)
-*Diagram from: Davies, N., Deck, J., Kansa, E., Kansa, S., Kunze, J., Meyer, C., Orrell, T., Ramdeen, S., Snyder, R., Vieglais, D., Walls, R.L., & Lehnert, K. (2021). Internet of Samples (iSamples): Toward an Interdisciplinary Cyberinfrastructure for Material Samples. Paper submitted for review.*
+*Diagram from: Neil Davies, John Deck, Eric C Kansa, Sarah Whitcher Kansa, John Kunze, Christopher Meyer, Thomas Orrell, Sarah Ramdeen, Rebecca Snyder, Dave Vieglais, Ramona L Walls, Kerstin Lehnert, Internet of Samples (iSamples): Toward an interdisciplinary cyberinfrastructure for material samples, GigaScience, Volume 10, Issue 5, May 2021, giab028, https://doi.org/10.1093/gigascience/giab028*
 
 ## Background
 Research frequently uses material samples as a basic element for reference, study, and experimentation in many scientific disciplines, especially in the natural and environmental sciences, material sciences, agriculture, physical anthropology, archaeology, and biomedicine. Observations made on samples collected in the field and in the laboratory constitute a critical data resource for research that addresses grand challenges of our planet’s future sustainability, from environmental change; to food, energy, and water resources; to natural hazards and their mitigation; to public health. The large investments of public funds being made to curate huge volumes of samples acquired over decades or even centuries, and to collect and analyze new samples demand these samples to be openly accessible, easily discoverable, and documented with sufficient information to make them reusable. The current ecosystem of sample and sample data management in the U.S. and globally is highly fragmented across stakeholders, including museums, federal agencies, academic institutions, and individual researchers, with a multitude of institutional and discipline-specific catalogs, practices for sample identification, and protocols for describing samples.
