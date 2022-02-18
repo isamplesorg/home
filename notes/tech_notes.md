@@ -9,7 +9,7 @@ These notes are stored in github under `home/notes/tech_notes.md`.
 ## 2022-02-18
 
 Agenda:
+- Clustering work
 - Update on web ui
 - Procedures for deploying the web ui (version, release, deploy)
 - Goals for linkml use
-
