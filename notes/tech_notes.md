@@ -7,6 +7,38 @@
 These notes are stored in github under `home/notes/tech_notes.md`. 
 Notes from earlier meetings are at https://docs.google.com/document/d/1GIScduypIrdPi5P62DhvrBCmCw0ypkEJpAM8iQNzCkw/edit?usp=sharing
 
+## 2022-02-25
+
+- Update on Web UI
+    - https://hyde.cyverse.org/isamples_central/ui
+    - Table column selection
+    - Date range selection
+    - TODO:
+        - Add a badge for identifying which box is being viewed
+        - Add a mechanism for exporting selected records
+        - Hide facets that have a zero count
+        - Show vocabularies as a hierachy
+
+- Clustering
+    - made the code more efficient, now run 60k records takes 10 mins and less than 9G of RAM. Code pushed to github.
+    - next step is to use selected fields and a larger samples (10% of total records) 
+    - also look into [Orange](https://orangedatamining.com/)
+
+- LinkML and core model
+    - Draft of generated documentation: https://isamplesorg.github.io/metadata/, https://isamplesorg.github.io/metadata/
+    - CVs may be published in e.g.,https://journals.sfu.ca/ijg/index.php/journal/index
+
+- Web UI release. What needs to be done at the project level before more widely sharing the web ui?
+    - URLs
+    - Feedback
+    - Monitoring
+    - Documentation
+        - Model
+        - API
+    - Add branding, links to project and github (logo, favico, title)
+    - Add a gmail address for handling feedback
+    - Any other metrics to capture?
+
 ## 2022-02-18
 
 Agenda:
