@@ -2,10 +2,37 @@
 
 - When: Fridays, 12:00 ET
 - Where: https://arizona.zoom.us/j/84283310669
-- Notes: https://hackmd.io/l4vmRR1vSGOJq5xovO2BOg
+- Notes: https://hackmd.io/SLE_8TwcSJu5fTeqwkdXng
 
 These notes are stored in github under `home/notes/tech_notes.md`. 
 Notes from earlier meetings are at https://docs.google.com/document/d/1GIScduypIrdPi5P62DhvrBCmCw0ypkEJpAM8iQNzCkw/edit?usp=sharing
+
+## 2022-03-11
+
+Vocabulary work:
+
+* Steve adjusting comments for various vocabularies, will update rdfs:comment to skos:definition for definitions. 
+* Hong has been working on deriving vocabularies from the content
+    * SESAR descripton field, end up with about 72,000 unique descriptions (after removing punctuations, etc). Basically 72,000 sets of keywords
+    * TODO: Download the records and evaluate the clustering within high level vocabulary
+
+
+DataCite:
+
+* Need to start setting up testing with IGSN minting with the new Datacite infrastructure
+    * Rory, Cody Ross, Matt at DataCite
+        * TODO: setup a call with Rory, Cody and Matt
+    * IGSN metadata mapping will store admin type info and link sample metadata, very similar to the current approach for IGSN.
+    * IGSN metadata recommendation document: https://docs.google.com/document/d/1iEGZNaIqx4bMKFRrpcv4ljoCGv_pssUmk_YEgA8RTT8/edit
+    * Complications for fee model support - fees need to be paid for IGSN minting, how to manage this?
+* For identifier minting - could have an option for minting IGSNs if account info is available, or ARKs in other cases
+    * ARKs could be minted by iSamples Central as a virtual org
+
+Strabospot:
+* Support minting IGSNs (and possibly ARKs)
+* Operates offline, and syncs with a server when back online
+* Similar to FAIMS field data collection (originally for archaeology)
+
 
 ## 2022-02-25
 
