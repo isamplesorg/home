@@ -7,6 +7,7 @@ The Internet of Samples (iSamples) is a multi-disciplinary and multi-institution
 * [Article -- Internet of Samples (iSamples): Toward an interdisciplinary cyberinfrastructure for material samples](https://doi.org/10.1093/gigascience/giab028)
 * [Zenodo Community](https://zenodo.org/communities/isamples)
 * [Follow us on Twitter](https://twitter.com/isamplesorg)
+* [GitHub Repository](https://github.com/isamplesorg/home)
 * [Recording of project presentation at the 2020 SPNHC & ICOM NATHIST Conference](https://youtu.be/eRUw5NMksFo?t=105)
 
 ## Project Objectives
