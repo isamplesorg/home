@@ -7,6 +7,150 @@
 These notes are stored in github under `home/notes/tech_notes.md`. 
 Notes from earlier meetings are at https://docs.google.com/document/d/1GIScduypIrdPi5P62DhvrBCmCw0ypkEJpAM8iQNzCkw/edit?usp=sharing
 
+## 2022-04-01
+
+iSamples UI and backend updates
+- Adding Cesium 3D view to search UI
+- Dump to sqlite
+- General performance improvements
+
+
+Clustering work and potential vocabulary suggestions
+- limited by resources
+- about an hour for operation on HPC
+- Need to look at the clustering results for GEOME and Smithsonian to see what additional terms are being identified in the source records to assist with the assignment of controlled vocabulary terms or perhaps expand the vocabularies with narrower terms.
+    - Finish BERT
+    - Clustering on progression of vocabularies 
+    - Look at more detailed clustering
+
+
+Metadata model
+- Some adjustment for closer alignment with [prov](https://www.w3.org/TR/prov-primer/) and [geojson-ld](http://www.opengis.net/doc/IS/eo-geojson/1.0). See [GeoJSON feature draft implementation](https://github.com/isamplesorg/metadata/blob/GeoJSON-schema/iSamplesGeoJSONSchemaBasic0.3.json) of iSamples 0.3 schema.
+- Action of taking a sample is a type of `prov:Activity`
+- Curation activity is a type of `prov:Activity`
+- Should curated location (i.e. the current location of the specimen) be a property of the sample or of the curation activity? If 'curatedLocation' is a property of Curation, and Curation is viewed as a collection of events ('curation history'), then previous locations of sample will be tracked...
+- Similarly for sample access constraints.  Access constraints are bound to the current sample location, so should be with curationLocation (where ever that lands)
+
+
+```plantuml
+
+class Temporal
+note bottom: Includes prov\nstartedAtTime and\nendedAtTime
+
+class Spatial
+note bottom: Spatial is an instance\nof a geojson Feature
+
+class Protocol
+note bottom: Defined sampling methodology
+
+class Initiative
+note bottom: Context for\nsampling activity
+
+class "prov:Agent" as Agent
+
+abstract class "prov:Entity" as Entity
+abstract class "prov:Activity" as Activity
+
+PhysicalEntity -|> Entity
+SamplingActivity -|> Activity
+CurationActivity -|> Activity
+
+class PhysicalEntity {
+	Identifier: id
+	String: label
+	String: description
+	String[]: keywords
+	Concept: specimenType
+	Concept: materialType
+	SamplingActivity: wasGeneratedBy
+	CurationActivity[]: curationActivity
+	Concept[]: classification
+	curationLocation
+	accessConstraints
+}
+
+class SamplingActivity {
+	Identifier: id
+	Agent: wasAssociatedWith
+	PhysicalEntity: used
+	Spatial: where
+	Temporal: when
+	Concept: sampledFeature
+	Protocol: procedure
+	Initiative: initiative
+}
+
+class CurationActivity {
+	Identifier: id
+	Temporal: when
+	PhysicalEntity: used
+	Agent: curator	
+	String: description
+}
+
+PhysicalEntity --> SamplingActivity : wasGeneratedBy
+SamplingActivity -- Temporal
+SamplingActivity -- Agent
+CurationActivity -- Agent
+SamplingActivity -- Spatial
+PhysicalEntity -- CurationActivity
+SamplingActivity -- Protocol
+SamplingActivity -- Initiative
+```
+
+Note -- the current model has identifier for the 'digital specimen', i.e. the metadata record about the sample, and a separate identifier for the physical object (e.g. an IGSN). In the example here, 'wasGeneratedBy' is technically about the thing identified by @id--i.e. the metadata record, not the sample. 
+
+Incomplete draft of a physical sample in json-ld:
+```json
+{
+	"@context":{
+		"@vocab":"https://isamples.org/schema/",
+		"ORCID":"https://orcid.org/",
+		"geojson": "https://purl.org/geojson/vocab#",
+		"specimen": "https://w3id.org/isample/vocabulary/specimentype/0.9/",
+		"material": "https://w3id.org/isample/vocabulary/materialtype/0.9/",
+		"sample": "https://w3id.org/isample/vocabulary/sampledfeature/0.9/"
+	},
+	"@id": "sample-001",
+	"@type":"PhysicalEntity",
+	"specimenType": {"@id":"specimen:liquidorgas"},
+	"materialType": {"@id":"material:gaesousmaterial"},
+	"wasGeneratedBy":{
+		"@type":"SamplingActivity",
+		"@id":"https://igsn.org/FAKE0001",
+		"wasAssociatedWith": {
+			"@id":"ORCID:0000-002-6513-4996"
+		},
+		"used":{
+			"@id":"https://www.wikidata.org/wiki/Q2"
+		},
+		"sampledFeature":{"@id":"sample:atmosphere"},
+		"startedAtTime":"2021-01-01T12:03:01.000Z",
+		"endedAtTime":"2021-01-01T12:03:01.000Z",
+		"where":{
+			"@type": "geojson:Feature",
+			"geometry":{
+				"@type":"geojson:Point",
+				"coordinates": [
+					-149.82845306396484,
+					-17.49164892251183
+				]			
+			},
+			"properties":{
+				"title":"Oriti",
+				"description":"The porch of Oriti"
+			}
+		}
+	},
+	"curationActivity": [
+		{
+			"@type":"CurationActivity",
+			"startedAtTime": "2021-03-01",
+			"wasAssociatedWith": {"@id":"ORCID:0000-0002-6513-4996"}
+		}
+	]
+}
+```
 ## 2022-03-11
 
 Vocabulary work:
