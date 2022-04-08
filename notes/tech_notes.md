@@ -7,6 +7,55 @@
 These notes are stored in github under `home/notes/tech_notes.md`. 
 Notes from earlier meetings are at https://docs.google.com/document/d/1GIScduypIrdPi5P62DhvrBCmCw0ypkEJpAM8iQNzCkw/edit?usp=sharing
 
+## 2022-04-08
+
+### Backend
+
+- Performance improvements for harvesting and ingest
+- Loading and reindexing processmore performant for changes to index and / or core data model
+
+### WebUI
+
+- Cesium 3d view streaming updates
+- A couple more optimizations to use:
+    - geohash for proximity 
+    - pre-compute elevations for terrain display
+
+### Vocabularies, narrower terms
+
+Three vocabularies:
+- Sampled Feature
+- Specimen Type
+- Material Type
+
+Identify narrower terms for each vocabulary to assist with discovery. e.g. SESAR has extensive lists of somewhat controlled terms. Can we normalize those terms and extend the vocabularies with terms as appropriate?
+
+For OpenContext, can do manual alignment from Getty and British Museum (if available). These would feed into MaterialType and SpecimenType. SampledFeature is more challenging.
+
+GEOME locality field can be helpful for broad feature descriptions. Habitat can be controlled for some teams (e.g. ENVO terms). Perhaps group by the team id and evaluate the terms. Habitat and microhabitat may be useful for SampledFeature descriptions. MIXSv6 env_broad_scale terms. 
+
+
+### Adding content to iSamples
+
+Investigating light weight options for adding content to iSamples. One approach may be to use sources like GitHub repo (consistent layout based on a template), and aggregate content from those GH sources to an iSB instance. Validation, identifier allocation could be done at the repository level. Basic workflow would be something like:
+
+1. Create repository from template
+2. Edit descriptive info
+3. Add content
+    - Records as spreadsheets / CSV tables
+    - Images stored in repo or (especially for large media) separately using an online service such as flickr, Dropbox, Filebase, etc. Content needs to be accessible via URL, ideally with identifier assigned. Figshare and zenodo. Check SESAR related materials field for common links to external resources.
+4. Validation scripts are applied against content 
+5. Notify iSB maintainer of content avaiability
+6. iSB syncs content from GH repo
+7. Content becomes available through iSC
+
+Challenges include:
+- identifier minting. Perhaps use iSB as an authoritative source (new API)
+- curation process? (can be partially automated) Perhaps add a label to records that indicate they have been reviewed by a curator. e.g. SESAR hs 3 methods for registration: single record, batch file (curator reviewed, e.g. ownership, incorrect labelling), web services. GEOME content is self managed, sometimes a datamanger may examine. 
+    
+
+
+
 ## 2022-04-01
 
 iSamples UI and backend updates
