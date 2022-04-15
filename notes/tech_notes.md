@@ -7,6 +7,69 @@
 These notes are stored in github under `home/notes/tech_notes.md`. 
 Notes from earlier meetings are at https://docs.google.com/document/d/1GIScduypIrdPi5P62DhvrBCmCw0ypkEJpAM8iQNzCkw/edit?usp=sharing
 
+## 2022-04-15
+
+Hackathon / technical docs:
+- Setting up an iSB
+- Documentation for onboarding 
+
+### WebUI
+
+- Cesium3D view now on iSC
+    - https://hyde.cyverse.org/isamples_central/ui/
+- Feedback needed
+    - Add issues to https://github.com/isamplesorg/isamples_webui/issues
+
+- Option to save state to a database, and retrieve that information as the current view (query and 3d view). This would enable easy sharing and gathering metrics
+- 
+
+### Identifier Minting
+
+A use case to be supported by iSamples is the minting (creation) of identifiers to be associated with physical samples.
+
+- > O12: Researcher needs to manage field assigned identifiers. Difficulty is reconciling identifiers that describe the context and the information from someone describing the samples in a bag. People have different references in the field, and then need to reconcile is this trench two the same trench 2?
+- > C1: Researchers want to be able to get sample IDs and record sample metadata early in a project.
+
+States of an identifier:
+
+1. Identifier is created with no information 
+2. Identifier is associated with uncurated information
+3. Identified information has been validated and stored in repo
+4. Identified information is published (generally available)
+5. Identified information is deprecated
+
+Information required to mint an identifier (properties of the identifier):
+
+- who
+- when
+- allocating agent (the system that the research isusing to mint the identifier)
+- other?
+- intended use of the identifier (what is it identifying)
+
+Users minting identifiers should be authenticated, this will provide the "who".
+
+Different kinds of identifier for different purposes. e.g.: IGSN for physical samples; ORCID for people; ROR for organizations; ARK or DOI for media (or anything else)
+
+SESAR - request hold on identifier range. Need a flag on the identifiers to indicate "unregistered" / record hasn't been added to a collection.
+
+Given a freshly minted identifier, is the existence of the identifier recorded by the allocating agent? Or by the requestor?
+
+Microservice to generate an opaque string. A stateful minter ensures uniqueness across minting. A stateless minter may take the last identifier minted and return the next.
+
+What about the 50000 identifiers I didn't use in the field? Can they be returned?
+
+ROR and ORCID are centralized minters. 
+
+Perhaps mint a single "prefix" identifier and the researcher can add to the prefix to gather unique identifiers.
+
+Biodegradable identifiers? Option to extend expiration of unassigned identifiers.
+
+
+
+
+
+
+
 ## 2022-04-08
 
 ### Backend
