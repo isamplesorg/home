@@ -4,8 +4,39 @@
 - Where: https://arizona.zoom.us/j/84283310669
 - Notes: https://hackmd.io/SLE_8TwcSJu5fTeqwkdXng
 
-These notes are stored in github under `home/notes/tech_notes.md`. 
+These notes are stored in github under [`home/notes/tech_notes.md`](https://github.com/isamplesorg/home/blob/master/notes/tech_notes.md). 
 Notes from earlier meetings are at https://docs.google.com/document/d/1GIScduypIrdPi5P62DhvrBCmCw0ypkEJpAM8iQNzCkw/edit?usp=sharing
+
+
+## 2022-05-20
+
+Identifier minting
+- [`/isb_lib/identifiers`](https://github.com/isamplesorg/isamples_inabox/tree/develop/isb_lib/identifiers)
+- Currently supports (future) IGSN, DOI. ARKs support straight forward.
+
+Record landing pages
+- Provide a landing page for each identifier on iSC or iSB
+- Machine readable with record content embedded as json-ld
+- Human readable rendered client side
+
+Vocabularies
+
+- Three top level vocabularies (taxonomies)
+    - [Specimen type](https://isamplesorg.github.io/models/generated/vocabularies/specimenType.html)
+    - [Material type](https://isamplesorg.github.io/models/generated/vocabularies/materialType.html)
+    - [Sampled feature](https://isamplesorg.github.io/models/generated/vocabularies/sampledFeature.html)
+- Mapping existing records was done earlier, though was incomplete is some areas
+- Options for mapping:
+    - Records are manually annotated with vocab term (not scalable)
+    - Controlled terms in source align with vocab term (limited existing vocabs)
+    - Automated mapping from record content (requires training, varying precision)
+    - Semi-automated (automated suggestion, approval / correction provides feedback to training for progressive improvement)
+- Vocabulary extension adding (possibly domain specific) terms increasing specificity for high level taxonomy, i.e. adding narrower terms.
+    - Additional terms may be gleaned from corpus by vaious clustering approaches.
+
+- Overlap with TDWG / Darwin Core activities
+  -[materialSampleType Brainstorming Activity](https://docs.google.com/spreadsheets/d/1Q2Bj9uhCD0HWEgm_hGe3CeMleMIFYMzYqWXgtgblYOU/edit#gid=0)
+
 
 ## 2022-04-15
 
